@@ -14,7 +14,7 @@ const supports = {
 	styled: true,
 
 	// import { style } from "typestyle";
-	style: true,
+	// style: true,
 
 	// import { StyleSheet, css } from 'aphrodite';
 	// import styled, { css } from 'astroturf';
@@ -26,68 +26,68 @@ const supports = {
 
 	// import { StyleSheet, css } from 'aphrodite';
 	// import { AppRegistry, StyleSheet, Text, View } from 'react-native';
-	StyleSheet: isStyleSheetCreate,
+	// StyleSheet: isStyleSheetCreate,
 
 	// import styled, { css } from 'astroturf';
-	astroturf: true,
+	// astroturf: true,
 
 	// require('csjs')`css`;
-	csjs: true,
+	// csjs: true,
 
 	// require('cssobj')({color: 'red'})
-	cssobj: true,
+	// cssobj: true,
 
 	// require('electron-css')({color: 'red'})
-	'electron-css': true,
+	// 'electron-css': true,
 
 	// import styled from "react-emotion";
-	'react-emotion': true,
+	// 'react-emotion': true,
 
 	// import styled from 'vue-emotion';
 	// Also see:
 	// - https://github.com/stylelint/stylelint/issues/4247
 	// - https://github.com/gucong3000/postcss-jsx/issues/63
 	// - https://github.com/stylelint/postcss-css-in-js/issues/22
-	'vue-emotion': true,
+	// 'vue-emotion': true,
 
 	// import styled from 'preact-emotion'
-	'preact-emotion': true,
+	// 'preact-emotion': true,
 
 	// https://github.com/streamich/freestyler
-	freestyler: true,
+	// freestyler: true,
 
 	// https://github.com/paypal/glamorous
-	glamorous: true,
+	// glamorous: true,
 
 	// https://github.com/irom-io/i-css
 	// "i-css": (i, nameSpace) => nameSpace[i + 1] === "addStyles" && nameSpace[i + 2] === "wrapper",
 
 	// https://github.com/j2css/j2c
-	j2c: expectAdjacentSibling(['inline', 'sheet']),
+	// j2c: expectAdjacentSibling(['inline', 'sheet']),
 
 	// var styles = StyleSheet.create({color: 'red'})
-	'react-inline': isStyleSheetCreate,
-	'react-style': isStyleSheetCreate,
+	// 'react-inline': isStyleSheetCreate,
+	// 'react-style': isStyleSheetCreate,
 
 	// import reactCSS from 'reactcss'
-	reactcss: true,
+	// reactcss: true,
 
 	// const StyledButton = injectSheet(styles)(Button)
-	'react-jss': true,
+	// 'react-jss': true,
 
 	// import styled from 'styled-components';
 	'styled-components': true,
 
 	// import {withStyle} from "styletron-react";
-	'styletron-react': expectAdjacentSibling(['withStyle']),
+	// 'styletron-react': expectAdjacentSibling(['withStyle']),
 
 	styling: true,
 
 	// const rule = superstyle({ color: 'blue' })
-	superstyle: true,
+	// superstyle: true,
 
 	// import { makeStyles } from '@material-ui/styles'
-	styles: expectAdjacentSibling(['makeStyles']),
+	// styles: expectAdjacentSibling(['makeStyles']),
 };
 
 const plugins = [
