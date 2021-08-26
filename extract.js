@@ -306,11 +306,11 @@ function literalParser(source, opts, styles) {
 				setSpecifier(specifier.local, nameSpace);
 			});
 		},
-		JSXAttribute: (path) => {
-			if (/^(?:css|style)$/.test(path.node.name.name)) {
-				addObjectJob(path.get('value.expression'));
-			}
-		},
+		// JSXAttribute: (path) => {
+		// 	if (/^(?:css|style)$/.test(path.node.name.name)) {
+		// 		addObjectJob(path.get('value.expression'));
+		// 	}
+		// },
 		VariableDeclarator: (path) => {
 			variableDeclarator.set(path.node.id, path.node.init ? [path.get('init')] : []);
 		},
