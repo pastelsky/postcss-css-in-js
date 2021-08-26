@@ -92,7 +92,7 @@ const supports = {
 
 const plugins = [
 	'jsx',
-	'typescript',
+	// 'typescript',
 	'objectRestSpread',
 	// ['decorators', { decoratorsBeforeExport: false }],
 	'classProperties',
