@@ -157,12 +157,8 @@ function loadBabelOpts(opts) {
 function literalParser(source, opts, styles) {
 	let ast;
 
-	try {
-		ast = parse(source, loadBabelOpts(opts));
-	} catch (ex) {
-		// console.error(ex);
-		return styles || [];
-	}
+    // Fail loudly when AST cannot be parsed for some reason
+	ast = parse(source, loadBabelOpts(opts));
 
 	const specifiers = new Map();
 	const variableDeclarator = new Map();
